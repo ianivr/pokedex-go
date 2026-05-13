@@ -1,10 +1,10 @@
-package cleaninput
+package main
 
 import (
 	"strings"
 )
 
-func CleanInput(text string) []string {
+func cleanInput(text string) []string {
 	words := strings.Fields(strings.ToLower(text))
 	return words
 }

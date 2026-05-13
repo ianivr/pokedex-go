@@ -1,4 +1,4 @@
-package cleaninput
+package main
 
 import "testing"
 
@@ -22,7 +22,7 @@ func TestCleanInput(t *testing.T) {
 	}
 
 	for _, c := range tests {
-		actual := CleanInput(c.input)
+		actual := cleanInput(c.input)
 		if len(actual) != len(c.want) {
 			t.Errorf("expected length: %d, got: %d", len(c.want), len(actual))
 			continue
